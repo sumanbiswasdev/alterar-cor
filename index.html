@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Alterar cor</title>
+    <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        
+  </head>
+<body class="bg-black/90 ">
+
+    <main>
+
+        <section class="container flex flex-col mx-auto w-[600px] mt-60 py-10 text-center border-2 border-white backdrop-blur-md bg-black/40 rounded-md shadow-lg">
+
+            <h1 class="text-red-500 font-bold text-3xl">Desafio 1: Alterar cor</h1>
+        
+            <p class="mt-5 text-blue-600">Use o seletor abaixo para trocar a cor de fundo da caixa.</p>
+
+            <div class="controls mt-5 space-y-5 flex flex-col justify-center mx-auto text-white">
+                <label class="text-xl font-bold" for="trocarBackground">Escolha uma cor:</label>
+                <input class="w-64" oninput="mudarColor()" type="color" id="trocarBackground" value="#ffffff">
+            </div>
+
+            <div class="border-1 border-white w-64 h-28 mx-auto mt-8 rounded-lg" id="box"></div>
+
+            <span class="mt-5 text-white" id="colorCode">Cor atual: #ffffff</span>
+        </section>
+
+    </main>
+    <script src="/tailwind.config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
